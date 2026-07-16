@@ -36,20 +36,12 @@ function App() {
   ]
 
   // const handleclick=()=>{
-
   //   weatherData.find((item)=>{
-
   //     if(item.city==city)
-
   //       setweather(item)
-
   //   })
-
   //   }
-
   const handleclick = () => {
-
-
     const result = weatherData.find(
       item => item.city.toLowerCase() === city.toLowerCase()
     )
