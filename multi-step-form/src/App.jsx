@@ -22,11 +22,6 @@ const [education, setEducation] = useState({
 
 const [step, setStep] = useState(1);
 
- const submitForm = () => {
-    
-  setStep(5);
-
-}
 const nextStep=()=>{
    setStep(step+1)
 }
@@ -94,7 +89,7 @@ Next
       <p>Course: {education.course}</p>
       <button onClick={() => prevStep()}>Back</button>
       <button onClick={() => resetForm()}>reset</button>
-      <button onClick={submitForm}>Submit</button>
+      <button onClick={()=>nextStep()}>Submit</button>
     </>}
 
     {
