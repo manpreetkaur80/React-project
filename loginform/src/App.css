@@ -10,7 +10,6 @@ body {
   min-height: 100vh;
 }
 
-/* Main container */
 .content {
   min-height: 100vh;
   display: flex;
@@ -18,7 +17,6 @@ body {
   align-items: center;
 }
 
-/* Login card */
 .form {
   width: 400px;
   max-width: 90%;
@@ -31,7 +29,6 @@ body {
   flex-direction: column;
 }
 
-/* Heading */
 .form h1 {
   text-align: center;
   margin-bottom: 30px;
@@ -39,7 +36,6 @@ body {
   font-size: 32px;
 }
 
-/* Inputs */
 .form input {
   width: 100%;
   padding: 14px 16px;
@@ -56,13 +52,11 @@ body {
   transition: 0.2s;
 }
 
-/* Input focus */
 .form input:focus {
   border-color: #d88b9b;
   box-shadow: 0 0 6px rgba(216, 139, 155, 0.3);
 }
 
-/* Login button */
 .form button {
   width: 100%;
   padding: 14px;
@@ -80,14 +74,12 @@ body {
   transition: 0.2s;
 }
 
-/* Button hover */
 .form button:hover {
   background: #963f55;
   transform: translateY(-2px);
   box-shadow: 0 7px 15px rgba(184, 92, 112, 0.3);
 }
 
-/* Message */
 .form h3 {
   margin-top: 22px;
   padding: 12px;
@@ -101,7 +93,7 @@ body {
   font-size: 16px;
 }
 
-/* Mobile */
+
 @media (max-width: 500px) {
   .form {
     padding: 30px 22px;
