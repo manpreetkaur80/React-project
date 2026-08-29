@@ -10,7 +10,6 @@ body {
   color: #222;
 }
 
-/* Main Card */
 #center {
   width: 550px;
   max-width: 90%;
@@ -21,7 +20,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Heading */
+
 #center h1 {
   text-align: center;
   font-size: 38px;
@@ -29,7 +28,7 @@ body {
   color: #222;
 }
 
-/* Inputs */
+
 #center input {
   width: 100%;
   padding: 13px 15px;
@@ -45,7 +44,7 @@ body {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.1);
 }
 
-/* Add Expense Button */
+
 #center > button {
   width: 100%;
   padding: 13px;
@@ -63,7 +62,7 @@ body {
   background: #1d4ed8;
 }
 
-/* Expense List */
+
 .expenselist {
   margin-top: 10px;
 }
@@ -73,7 +72,6 @@ body {
   padding: 0;
 }
 
-/* Each Expense */
 .expenselist li {
   display: flex;
   justify-content: space-between;
@@ -87,7 +85,6 @@ body {
   font-size: 17px;
 }
 
-/* Delete Button */
 .expenselist li button {
   padding: 7px 12px;
   border: none;
@@ -102,7 +99,7 @@ body {
   background: #dc2626;
 }
 
-/* Total Section */
+
 #center > div:last-child {
   margin-top: 25px;
   padding: 18px;
@@ -116,12 +113,11 @@ body {
   color: #111827;
 }
 
-/* Add ₹ before total */
 #center > div:last-child h3::before {
   content: "₹";
 }
 
-/* Mobile */
+
 @media (max-width: 600px) {
   #center {
     padding: 25px 20px;

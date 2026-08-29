@@ -10,7 +10,6 @@ body {
   color: #222;
 }
 
-/* Main container */
 #center {
   width: 750px;
   max-width: 90%;
@@ -21,7 +20,7 @@ body {
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
 }
 
-/* Headings */
+
 #center h1 {
   text-align: center;
   font-size: 42px;
@@ -33,7 +32,7 @@ body {
   margin-top: 50px;
 }
 
-/* Product lists */
+
 #center ul {
   list-style: none;
   padding: 0;
@@ -68,7 +67,6 @@ body {
   transform: translateY(-1px);
 }
 
-/* Cart section */
 #center h2 {
   text-align: center;
   margin-top: 25px;
@@ -76,14 +74,13 @@ body {
   color: #111;
 }
 
-/* Quantity paragraph */
 #center li p {
   margin: 0;
   font-weight: bold;
   color: #222;
 }
 
-/* Quantity buttons */
+
 #center li button:nth-of-type(1),
 #center li button:nth-of-type(2) {
   background: #555;
@@ -94,7 +91,7 @@ body {
   background: #333;
 }
 
-/* Remove button */
+
 #center li button:last-child {
   background: #e74c3c;
 }
@@ -103,7 +100,6 @@ body {
   background: #c0392b;
 }
 
-/* Bill button */
 #center > button {
   display: block;
   margin: 30px auto 0;
@@ -123,7 +119,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   #center {
     padding: 25px 18px;
