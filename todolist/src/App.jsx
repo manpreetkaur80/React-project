@@ -1,7 +1,5 @@
 import { useLayoutEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+
 import './App.css'
 
 function App() {
@@ -17,21 +15,21 @@ function App() {
     // console.log(tasks),
     // console.log(task);
   }
-  return (   //valuw is used to indicate , that all thee task saved inside react also not onlu task , so value checks is the task value same that saved bedore inside react ,...
+  return (   //value is used to indicate , that all thee task saved inside react also not only task , so value checks is the task value same that saved bedore inside react ,...
     <>
       <section id="center">
 
-        <h1>To-DO List</h1>
+        <h1 className='title'>To-DO List</h1>
         <div className='add'>
-          <input type="text" name="task" id="task" value={task} onChange={(e) => addTask(e.target.value)} />
-          <button onClick={handleclick}>add task</button>
+          <input className='input' type="text" name="task" id="task" value={task} onChange={(e) => addTask(e.target.value)} />
+          <button className='btn' onClick={handleclick}>add task</button>
         </div>
         <div className='list'>
           {
 
-            <ul>
-              {tasks.map((task, index) =>( <li key={index}>{task.iscompleted ? "✅" : "⬜"}{task.text} {' '}
-               <button  onClick={() =>
+            <ul className='list'>
+              {tasks.map((task, index) =>( <li key={index} className='ans'>{task.iscompleted ? "✅" : "⬜"}{task.text} {' '}
+               <button className='btn btn1'  onClick={() =>
     setTasks(
       tasks.map((item, i) =>
         i === index
@@ -40,7 +38,7 @@ function App() {
       )
     )
   }>completed</button>
-                <button onClick={()=>setTasks(tasks.filter((e,i)=>i!==index))}>delete</button>
+                <button className='btn' onClick={()=>setTasks(tasks.filter((e,i)=>i!==index))}>delete</button>
               </li>)
               )}
             </ul>
